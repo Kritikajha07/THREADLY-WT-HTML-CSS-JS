@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Shop THREADLY contemporary clothing and accessories.">
+    <title>Shop — THREADLY</title>
+    <link rel="icon" href="images/logo/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header" data-site-header></header>
+    <main id="main" class="shell">
+        <header class="shop-header">
+            <p class="eyebrow">THE COLLECTION</p>
+            <h1>Shop all</h1>
+            <p>Everyday pieces shaped by thoughtful proportion, tactile fabrics, and a quiet point of view.</p>
+        </header>
+        <div class="inline-search"><label class="sr-only" for="shop-search">Search products</label><input
+                id="shop-search" type="search" placeholder="Search pieces…"><button hidden data-clear-search>Clear
+                Search</button></div>
+        <div class="shop-layout">
+            <aside class="filters" id="filters">
+                <div class="filter-group">
+                    <h2>CATEGORY</h2>
+                    <div class="filter-list" data-category-filters></div>
+                </div>
+                <div class="filter-group">
+                    <h2>SIZE</h2>
+                    <div class="filter-list" data-size-filters></div>
+                </div>
+                <div class="filter-group">
+                    <h2>COLOUR</h2>
+                    <div class="filter-list" data-color-filters></div>
+                </div>
+                <div class="filter-group">
+                    <h2>MAXIMUM PRICE</h2><input class="range" data-price type="range" min="650" max="2200" step="50"
+                        value="2200">
+                    <p class="filter-value">Up to <span data-price-value>₹2,200</span></p>
+                </div><button class="clear-filters" data-clear-filters>Clear all filters</button>
+            </aside>
+            <section aria-label="Product results">
+                <div class="shop-toolbar"><button class="filter-toggle" data-filter-toggle aria-expanded="false"
+                        aria-controls="filters">Filters</button>
+                    <p><span data-result-count>0</span> pieces</p><label><span class="sr-only">Sort
+                            products</span><select data-sort>
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: Low to High</option>
+                            <option value="high">Price: High to Low</option>
+                            <option value="rating">Rating</option>
+                            <option value="newest">Newest</option>
+                        </select></label>
+                </div>
+                <div class="product-grid" data-shop-grid></div>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer" data-site-footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
